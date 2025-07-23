@@ -6,16 +6,14 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 21:06:07 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/21 18:59:32 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/07/23 15:39:20 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
-# include <unistd.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
