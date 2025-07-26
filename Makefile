@@ -6,7 +6,7 @@
 #    By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/16 18:07:32 by gabrgarc          #+#    #+#              #
-#    Updated: 2025/07/25 10:56:37 by gabrgarc         ###   ########.fr        #
+#    Updated: 2025/07/25 18:15:53 by gabrgarc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRCS = \
 	ft_strlcat.c \
 	ft_toupper.c \
 	ft_tolower.c \
-	ft_strchr.c
+	ft_strchr.c \
+	ft_strrchr.c
 
 OBJS = $(SRCS:.c=.o)
 
