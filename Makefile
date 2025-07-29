@@ -6,7 +6,7 @@
 #    By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/16 18:07:32 by gabrgarc          #+#    #+#              #
-#    Updated: 2025/07/27 15:02:00 by gabrgarc         ###   ########.fr        #
+#    Updated: 2025/07/29 18:08:26 by gabrgarc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,10 @@ SRCS = \
 	ft_strncmp.c \
 	ft_memchr.c \
 	ft_memcmp.c \
-	ft_strnstr.c
+	ft_strnstr.c \
+	ft_atoi.c \
+	ft_calloc.c \
+	ft_strdup.c
 
 OBJS = $(SRCS:.c=.o)
 
