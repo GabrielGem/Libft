@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 11:57:12 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/29 17:29:47 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/07/31 17:26:14 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *nptr)
 {
 	int	number;
-	int sign;
+	int	sign;
 
 	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
