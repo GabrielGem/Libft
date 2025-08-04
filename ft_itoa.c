@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 18:28:16 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/08/04 14:41:43 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:08:59 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,16 +55,3 @@ char	*ft_itoa(int n)
 		result[0] = '-';
 	return (&result[0]);
 }
-//
-//#include <stdio.h>
-//
-//int	main(void)
-//{
-//	char	*result;
-//	int		num;
-//
-//	num = -2147483648;
-//	result = ft_itoa(num);
-//	printf("%s", result);
-//	return (0);
-//}
