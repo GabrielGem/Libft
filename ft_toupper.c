@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 18:11:29 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/25 18:11:40 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:20:18 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c > 96 && c < 123)
+	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
 }
