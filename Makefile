@@ -6,13 +6,13 @@
 #    By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/16 18:07:32 by gabrgarc          #+#    #+#              #
-#    Updated: 2025/08/04 18:32:56 by gabrgarc         ###   ########.fr        #
+#    Updated: 2025/08/06 17:27:12 by gabrgarc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = cc
-FLAGS = -Wall -Wextra -Werror -I.
+FLAGS = -Wall -Wextra -Werror
 
 SRCS = \
 	ft_isalpha.c \
@@ -50,21 +50,43 @@ SRCS = \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c
 
-OBJS = $(SRCS:.c=.o)
+SRCS_BONUS = \
+	ft_lstnew_bonus.c \
+	ft_lstadd_front_bonus.c \
+	ft_lstsize_bonus.c \
+	ft_lstlast_bonus.c \
+	ft_lstadd_back_bonus.c \
+	ft_lstdelone_bonus.c \
+	ft_lstclear_bonus.c \
+	ft_lstiter_bonus.c \
+	ft_lstmap_bonus.c
+
+OBJSDIR = objdir
+
+OBJS = $(SRCS:%.c=$(OBJSDIR)/%.o)
+
+OBJS_BONUS = $(SRCS_BONUS:%.c=$(OBJSDIR)/%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+$(OBJSDIR)/%.o: %.c | $(OBJSDIR)
 	$(CC) $(FLAGS) -c $< -o $@
 
+$(OBJSDIR):
+	mkdir -p $(OBJSDIR)
+
+bonus:
+	$(MAKE) OBJS='$(OBJS) $(OBJS_BONUS)'
+
 clean:
-	rm -rf *.o
+	rm -rf $(OBJSDIR)
 
 fclean: clean
 	rm -rf $(NAME)
 
-re: fclean
-	make
+re: fclean all
+
+.PHONY: all clean fclean re
