@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 18:07:34 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/25 18:07:40 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:25:04 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if ((char)c == '\0')
 		return ((char *)&s[i]);
-	return ((void *)0);
+	return (NULL);
 }
