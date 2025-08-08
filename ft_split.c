@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
+/*   By: gabrgarc <gabrgarc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 15:00:04 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/08/02 17:51:44 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:52:06 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_word_count(char const *s, char c, size_t wc)
+static size_t	ft_word_count(char const *s, char c, size_t wc)
 {
 	while (*s)
 	{
@@ -23,7 +23,7 @@ size_t	ft_word_count(char const *s, char c, size_t wc)
 	return (wc);
 }
 
-void	ft_free_problems(char **str_of_str, size_t n_free)
+static void	ft_free_problems(char **str_of_str, size_t n_free)
 {
 	while (n_free--)
 		free(str_of_str[n_free]);
