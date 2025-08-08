@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:49:35 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/25 16:36:32 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:14:35 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	s_len;
 
 	s_len = ft_strlen(src);
-	if (size <= 0)
+	if (size == 0)
 		return (s_len);
 	d_len = ft_strlen(dst);
 	if (size <= d_len)
