@@ -6,13 +6,13 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 18:28:16 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/08/04 15:08:59 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:52:25 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_numbers(long int n)
+static int	count_numbers(long int n)
 {
 	int	length;
 
