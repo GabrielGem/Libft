@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/25 18:11:05 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/25 18:11:07 by gabrgarc         ###   ########.fr       */
+/*   Created: 2025/08/07 18:20:45 by gabrgarc          #+#    #+#             */
+/*   Updated: 2025/08/07 18:21:26 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if (c > 64 && c < 91)
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	return (c);
 }
