@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
+/*   By: gabrgarc <gabrgarc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 16:44:34 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/26 19:31:20 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 19:42:40 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	ptrs = (unsigned char *)s;
 	while (n--)
 	{
-		if (*ptrs == (char)c)
+		if (*ptrs == (unsigned char)c)
 			return (ptrs);
 		ptrs++;
 	}
-	return ((void *)0);
+	return (NULL);
 }
