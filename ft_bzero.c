@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
+/*   By: gabrgarc <gabrgarc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 16:05:39 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/21 18:53:08 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 19:09:46 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
-
-	ptr = (char *)s;
 	while (n--)
-		*ptr++ = '\0';
+		*(char *)s++ = '\0';
 }
