@@ -6,7 +6,7 @@
 /*   By: gabrgarc <gabrgarc@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 14:25:56 by gabrgarc          #+#    #+#             */
-/*   Updated: 2025/07/21 15:55:03 by gabrgarc         ###   ########.fr       */
+/*   Updated: 2025/08/07 18:08:53 by gabrgarc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*ptr;
+	size_t	i;
 
-	ptr = (char *)s;
-	while (n--)
-		*ptr++ = (char)c;
+	i = 0;
+	while (i < n)
+	{
+		((char *)s)[i] = (char)c;
+		i++;
+	}
 	return (s);
 }
